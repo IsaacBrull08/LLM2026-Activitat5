@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Els personatges més rellevants de la història de Dragon Ball: Goku, Vegeta, Gohan, Piccolo, Bulma i Freezer.">
+    <meta name="author" content="Nom Cognom">
+    <meta name="keywords" content="Personatges Dragon Ball, Son Goku, Vegeta, Gohan, Piccolo, Bulma, Freezer">
+    <title>Personatges Rellevants - Univers Bola de Drac</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <script src="components/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Univers Dragon Ball</h1>
+        <p>Els protagonistes i antagonistes més icònics de la història</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Orígens de la sèrie</a></li>
+                <li><a href="sagues.html">Totes les Sagues</a></li>
+                <li><a href="personatges.html" class="actiu">Personatges Rellevants</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galeria Interactiva dels Personatges Més Rellevants</h2>
+        <p>Fes clic sobre qualsevol de les 6 imatges petites per veure el personatge ampliat i llegir la seva fitxa històrica:</p>
+
+        <!-- Exercici 1: 6 petites imatges que carreguen en mida gran en fer clic -->
+        <div class="galeria-contenidor">
+            <div class="miniatures">
+                <img src="img/goku.png" alt="Son Goku"
+                     onclick="mostrarPersonatge('img/goku.png', 'Son Goku (Kakarot)', 'Protagonista absolut de la sèrie. Saiyan enviat a la Terra que, gràcies a la seva bondat i passió per la superació personal, es converteix en el defensor més gran de l\'univers.')">
+
+                <img src="img/vegeta.png" alt="Vegeta"
+                     onclick="mostrarPersonatge('img/vegeta.png', 'Vegeta', 'Príncep orgullós dels Saiyans. Comença com un rival implacable de Goku, però acaba establint-se a la Terra, formant una família amb Bulma i assolint poders divins.')">
+
+                <img src="img/gohan.png" alt="Son Gohan"
+                     onclick="mostrarPersonatge('img/gohan.png', 'Son Gohan', 'Fill gran de Goku i Xixi. El primer mestís humà-saiyan, posseïdor d\'un potencial latent extraordinari que li va permetre derrotar Cell i assolir la forma Beast.')">
+
+                <img src="img/piccolo.png" alt="Piccolo"
+                     onclick="mostrarPersonatge('img/piccolo.png', 'Piccolo', 'Reencarnació de Piccolo Daimaku i guerrer del planeta Namek. Passa de ser el gran enemic de Goku a convertir-se en el mentor inseparable de Son Gohan i un estrateg clau.')">
+
+                <img src="img/bulma.png" alt="Bulma"
+                     onclick="mostrarPersonatge('img/bulma.png', 'Bulma', 'La científica més brillant de la Terra i hereva de Capsule Corporation. Creadora del Radar del Drac i de la màquina del temps; sense ella l\'aventura mai hauria començat.')">
+
+                <img src="img/freezer.png" alt="Freezer"
+                     onclick="mostrarPersonatge('img/freezer.png', 'Freezer', 'L\'emperador galàctic més temut de la història. Responsable de la destrucció del planeta Vegeta i detonant de la primera transformació de Goku en Super Saiyan a Namek.')">
+            </div>
+
+            <div class="visor-gran-caixa">
+                <img id="imatge-ampliada" src="img/goku.png" alt="Son Goku (Kakarot)">
+                <h3 id="nom-personatge">Son Goku (Kakarot)</h3>
+                <p id="desc-personatge">
+                    Protagonista absolut de la sèrie. Saiyan enviat a la Terra que, gràcies a la seva bondat i passió per la superació personal, es converteix en el defensor més gran de l'univers.
+                </p>
+            </div>
+        </div>
+
+        <h2>Altres Figures Fonamentals de la Història</h2>
+        <div class="graella-cards">
+            <article class="card card-amb-foto">
+                <img src="img/krilin.png" alt="Krilin" class="foto-fitxa">
+                <h3>Krilin</h3>
+                <p>El millor amic de Goku des de la infància i l'humà més fort de la Terra. La seva mort a mans de Freezer va desencadenar el despertar del Super Saiyan.</p>
+            </article>
+            <article class="card card-amb-foto">
+                <img src="img/trunks.png" alt="Trunks del Futur" class="foto-fitxa">
+                <h3>Trunks del Futur</h3>
+                <p>Fill de Vegeta i Bulma provinent d'un futur apocalíptic devastat pels androides. Va portar l'esperança al present i va derrotar Freezer en segons.</p>
+            </article>
+            <article class="card card-amb-foto">
+                <img src="img/roshi.png" alt="Follet Tortuga" class="foto-fitxa">
+                <h3>Follet Tortuga (Muten Roshi)</h3>
+                <p>El mestre d'arts marcials que va entrenar Goku i Krilin, creador de la mítica tècnica del Kamehameha i figura clau fins i tot al Torneig del Poder.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Activitat 5 - Llenguatges de Marques i Sistemes de Gestió d'Informació (HTML5, CSS3 i JavaScript)</p>
+    </footer>
+</body>
+</html>

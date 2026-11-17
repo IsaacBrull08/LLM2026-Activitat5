@@ -1,0 +1,321 @@
+/* Full d'estils principal - Univers Dragon Ball */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Barra superior del rellotge (Exercici 3) */
+#rellotge-sessio {
+    background-color: #111827;
+    color: #fbbf24;
+    text-align: right;
+    padding: 0.55rem 2rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* Capçalera i navegació */
+header {
+    background-color: #ea580c;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-bottom: 5px solid #1e3a8a;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #ffedd5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.25s ease;
+}
+
+nav a:hover,
+nav a.actiu {
+    background-color: #facc15;
+    color: #111827;
+}
+
+/* Contingut principal */
+main {
+    max-width: 1020px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #c2410c;
+    border-bottom: 2px solid #fed7aa;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    color: #1e3a8a;
+    margin-bottom: 0.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Targetes informatives */
+.graella-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #fff7ed;
+    border-left: 4px solid #ea580c;
+    padding: 1.1rem;
+    border-radius: 6px;
+}
+
+/* Exercici 2: Secció interactiva onmouseover / onmouseout */
+.seccio-interactiva {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e0f2fe;
+    color: #0f172a;
+    border: 2px solid #0284c7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#text-ocult {
+    display: none;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #fbbf24;
+    font-weight: bold;
+}
+
+/* Sagues */
+.bloc-etapa {
+    margin-bottom: 1.75rem;
+}
+
+.llista-sagues {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.llista-sagues li {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #1e3a8a;
+    padding: 0.9rem 1.1rem;
+    border-radius: 5px;
+}
+
+/* Exercici 4: Formulari de contrasenya */
+.caixa-formulari {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #eff6ff;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+}
+
+.formulari-pass {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 420px;
+    margin-top: 1rem;
+}
+
+.formulari-pass label {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.formulari-pass input {
+    padding: 0.6rem;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.formulari-pass button {
+    padding: 0.7rem 1rem;
+    background-color: #ea580c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.4rem;
+}
+
+.formulari-pass button:hover {
+    background-color: #c2410c;
+}
+
+/* Exercici 1: Galeria de 6 imatges petites (2x3) + imatge gran equilibrada */
+.galeria-contenidor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-top: 1rem;
+}
+
+.miniatures {
+    flex: 1 1 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.miniatures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.miniatures img:hover {
+    transform: scale(1.03);
+    border-color: #ea580c;
+}
+
+.visor-gran-caixa {
+    flex: 1.4 1 400px;
+    background-color: #f8fafc;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.visor-gran-caixa img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 6px;
+    border: 3px solid #ea580c;
+    margin-bottom: 0.75rem;
+}
+
+.visor-gran-caixa h3 {
+    color: #c2410c;
+    font-size: 1.3rem;
+}
+
+/* Peu de pàgina */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+/* Contingut secret desbloquejat en validar la contrasenya */
+.contingut-desbloquejat {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border-left: 6px solid #facc15;
+    border-radius: 6px;
+}
+
+.contingut-desbloquejat h4 {
+    color: #facc15;
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+}
+
+.contingut-desbloquejat p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+.card-amb-foto {
+    text-align: center; /* Centra el títol i text si vols, o manté a l'esquerra */
+    padding-top: 1rem;
+}
+
+.foto-fitxa {
+    width: 80px;  /* Mida xicoteta tipus icona */
+    height: 80px;
+    object-fit: cover; /* Perquè no es deforme si no és quadrada perfecta */
+    border-radius: 50%; /* Foto redona, queda molt bé */
+    border: 3px solid #1e3a8a; /* Blau fosc */
+    margin-bottom: 0.5rem;
+}
+
+/* Graella simètrica de 2x2 per a les targetes d'inici */
+.graella-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+/* Imatge de portada a la pàgina de sagues */
+.portada-sagues {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.portada-sagues img {
+    width: 75%;
+    max-height: 270px;
+    object-fit: cover;
+    border: 3px solid #ff5b02;
+    border-radius: 8px;
+}

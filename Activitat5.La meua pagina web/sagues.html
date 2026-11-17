@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recorregut cronològic per totes les sagues de Dragon Ball, Dragon Ball Z, GT, Super i Daima.">
+    <meta name="author" content="Nom Cognom">
+    <meta name="keywords" content="Sagues Dragon Ball, Dragon Ball Z, Dragon Ball Super, Freezer, Cell, Majin Buu">
+    <title>Totes les Sagues - Univers Bola de Drac</title>
+    <link rel="stylesheet" href="css/estils.css">
+
+    <!-- Exercici 4: Codi JavaScript al head per validar la contrasenya i desbloquejar informació -->
+    <script>
+        function comprovarContrasenya() {
+            var pass1 = document.getElementById("nova-pass").value;
+            var pass2 = document.getElementById("repetir-pass").value;
+            var blocSecret = document.getElementById("arxius-secrets");
+
+            if (pass1.length < 8) {
+                alert("Error: La contrasenya ha de tenir com a mínim 8 caràcters de longitud.");
+                blocSecret.style.display = "none";
+                return;
+            }
+
+            if (pass1 !== pass2) {
+                alert("Error: Les dues contrasenyes introduïdes no coincideixen.");
+                blocSecret.style.display = "none";
+                return;
+            }
+
+            alert("S'ha canviat correctament la contrasenya");
+            blocSecret.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Univers Dragon Ball</h1>
+        <p>Cronologia completa de totes les sagues de la franquícia</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Orígens de la sèrie</a></li>
+                <li><a href="sagues.html" class="actiu">Totes les Sagues</a></li>
+                <li><a href="personatges.html">Personatges Rellevants</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Totes les Sagues de Dragon Ball</h2>
+        <p>Al llarg de quatre dècades, la història de Son Goku i els seus companys s'ha dividit en grans etapes i arcs argumentals:</p>
+
+        <section class="bloc-etapa">
+            <div class="portada-sagues">
+            <img src="img/sagues.png" alt="Evolució de les sagues de Dragon Ball">
+        </div>
+            <h3>1. Dragon Ball (Etapa Clàssica)</h3>
+            <ul class="llista-sagues">
+                <li><strong>Saga de l'Emperador Pilaf:</strong> Goku i Bulma es coneixen i emprenen el primer viatge per reunir les 7 Boles de Drac abans que el malvat Pilaf demani dominar el món.</li>
+                <li><strong>Saga del 21è Torneig Mundial d'Arts Marcials:</strong> Goku i Krilin entrenen sota les ordres del Follet Tortuga (Muten Roshi) i competeixen al gran torneig contra Jackie Chun.</li>
+                <li><strong>Saga de l'Exèrcit de la Cinta Vermella (Red Ribbon):</strong> Goku s'enfronta tot sol a una organització militar que busca les boles, derrotant assassins com Tao Pai Pai.</li>
+                <li><strong>Saga de Piccolo Daimaku i 23è Torneig Mundial:</strong> El rei dels dimonis Piccolo Daimaku amenaça la Terra. Tres anys més tard, Goku ja adult s'enfronta al seu fill Piccolo Jr. a la final del torneig.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-etapa">
+            <h3>2. Dragon Ball Z</h3>
+            <ul class="llista-sagues">
+                <li><strong>Saga dels Saiyans:</strong> L'arribada de Raditz revela l'origen extraterrestre de Goku. Els Guerrers Z han de defensar la Terra de Nappa i del príncep Vegeta.</li>
+                <li><strong>Saga de Namek i Freezer:</strong> Viatge al planeta Namek per reviure els companys caiguts, culminant en la batalla contra el tirà Freezer i el despertar del llegendari Super Saiyan.</li>
+                <li><strong>Saga dels Androides i Cèl·lula (Cell):</strong> Trunks del futur adverteix d'una amenaça cibernètica creada pel Dr. Gero. El bioandroide Cell organitza un torneig on Son Gohan assoleix el Super Saiyan 2.</li>
+                <li><strong>Saga de Majin Buu:</strong> El bruixot Babidi desperta el monstre Majin Buu. Apareixen tècniques com la fusió (Gotenks i Vegetto) i Goku derrota Kid Buu amb una Genkidama universal.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-etapa">
+            <h3>3. Dragon Ball GT (Continuació alternativa dels anys 90)</h3>
+            <ul class="llista-sagues">
+                <li><strong>Sagues de Baby, Super 17 i els Dracs Malignes:</strong> Goku torna a ser petit per un desig accidental. Viatja per l'espai, aconsegueix la transformació del Super Saiyan 4 i s'enfronta als dracs nascuts de l'energia negativa de les Boles de Drac.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-etapa">
+            <h3>4. Dragon Ball Super</h3>
+            <ul class="llista-sagues">
+                <li><strong>Saga de la Batalla dels Déus i Resurrecció de Freezer:</strong> Goku coneix Bills (Déu de la Destrucció) i Whis, descobrint el poder del Super Saiyan Déu i el Super Saiyan Blue.</li>
+                <li><strong>Saga del Torneig del 6è Univers i Goku Black / Zamasu:</strong> Competició amistosa entre universos i viatge al futur de Trunks per aturar el pla Zero Humans de Zamasu.</li>
+                <li><strong>Saga de la Supervivència Universal (Torneig del Poder):</strong> Vuit universos lluiten per evitar ser esborrats per Zeno-sama. Goku desperta l'Ultra Instint contra Jiren.</li>
+            </ul>
+        </section>
+
+        <section class="bloc-etapa">
+            <h3>5. Dragon Ball Daima (2024)</h3>
+            <ul class="llista-sagues">
+                <li><strong>Saga del Regne dels Dimonis:</strong> Per culpa d'una conspiració liderada per Gomah, Goku i els seus amics són convertits en nens i viatgen al Regne dels Dimonis per revertir l'encanteri.</li>
+            </ul>
+        </section>
+
+        <!-- Exercici 4: Formulari amb validació de contrasenya -->
+        <section class="caixa-formulari">
+            <h3>Zona d'Accés Capsule Corp - Canvi de Contrasenya</h3>
+            <p>Introdueix una nova contrasenya dues vegades (mínim 8 caràcters) per desbloquejar els arxius confidencials de Capsule Corp.</p>
+            <form class="formulari-pass" onsubmit="event.preventDefault(); comprovarContrasenya();">
+                <label for="nova-pass">Nova contrasenya:</label>
+                <input type="password" id="nova-pass" name="nova-pass" placeholder="Mínim 8 caràcters">
+
+                <label for="repetir-pass">Repeteix la contrasenya:</label>
+                <input type="password" id="repetir-pass" name="repetir-pass" placeholder="Torna a escriure la contrasenya">
+
+                <button type="submit">Validar i obrir arxius secrets</button>
+            </form>
+
+            <!-- Contingut que s'obre a sota en validar correctament la contrasenya -->
+            <div id="arxius-secrets" class="contingut-desbloquejat">
+                <h4>Accés concedit: Arxius Confidencials de Capsule Corp</h4>
+                <p><strong>1. Registre de la Màquina del Temps de Bulma:</strong> Els viatges en el temps no modifiquen el passat d'una única línia, sinó que creen universos paral·lels alternatius (com el futur de Trunks devastat pels Androides 17 i 18).</p>
+                <p><strong>2. Dades dels Scouters (Mesuradors de Poder):</strong> El sistema imperial de Freezer va quedar obsolet a Namek quan el nivell de Son Goku en Super Saiyan va superar les 150.000.000 d'unitats de combat.</p>
+                <p><strong>3. Les Super Boles de Drac:</strong> Creades pel Déu Drac Zarama, tenen la mida d'un planeta sencer (37.196 km de diàmetre) i permeten concedir qualsevol desig sense cap limitació.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Activitat 5 - Llenguatges de Marques i Sistemes de Gestió d'Informació (HTML5, CSS3 i JavaScript)</p>
+    </footer>
+</body>
+</html>
